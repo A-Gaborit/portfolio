@@ -1,5 +1,10 @@
 @import './base.css';
-@import "tailwindcss";
+@import 'tailwindcss';
 
-#app {
+@theme {
+  --color-primary: #7fb384;
+}
+
+.pattaya {
+  font-family: 'Pattaya', sans-serif;
 }

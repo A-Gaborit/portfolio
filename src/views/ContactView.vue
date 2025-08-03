@@ -7,10 +7,10 @@ useHead({
     { name: 'description', content: 'Contactez-moi pour toute demande ou collaboration.' },
     { property: 'og:title', content: 'Contact - Portfolio Audrey Gaborit' },
     { property: 'og:description', content: 'Contactez-moi pour toute demande ou collaboration.' },
-  ]
+  ],
 })
 </script>
 
 <template>
-  <h1 class="text-2xl font-extrabold p-4">Contact</h1>
+  <h1 class="text-2xl font-semibold p-4">Contact</h1>
 </template>

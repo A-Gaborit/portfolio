@@ -8,7 +8,7 @@
   --vt-c-black-soft: #222222;
   --vt-c-black-mute: #282828;
 
-  --vt-c-indigo: #2c3e50;
+  --vt-c-indigo: #3f3f3f;
 
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
   --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
@@ -55,13 +55,22 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  font-weight: normal;
+}
+
+header,
+main {
+  max-width: 1280px;
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
+  margin: auto;
   color: var(--color-text);
-  background: var(--color-background);
+  background:
+    radial-gradient(circle at 20% 30%, #b0f2b6 0%, transparent 30%),
+    radial-gradient(circle at 80% 20%, #fff176 0%, transparent 40%),
+    radial-gradient(circle at 50% 70%, #b0f2b6 0%, transparent 50%),
+    linear-gradient(to bottom right, #b0f2b6, #fff176);
   transition:
     color 0.5s,
     background-color 0.5s;
@@ -83,4 +92,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.pattaya {
+  font-family: 'Pattaya', sans-serif;
 }
