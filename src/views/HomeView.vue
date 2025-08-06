@@ -31,7 +31,7 @@ useHead({
       <img
         src="@/assets/avatar.png"
         alt="Avatar"
-        class="filter brightness-130 object-contain flex flex-1 h-auto md:h-full lg:scale-[110%] lg:translate-y-[-5%]"
+        class="filter brightness-130 object-contain flex flex-1 max-h-full h-auto md:h-full lg:scale-[110%] lg:translate-y-[-5%]"
       />
     </div>
   </section>
