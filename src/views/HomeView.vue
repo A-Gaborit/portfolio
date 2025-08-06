@@ -12,25 +12,26 @@ useHead({
 </script>
 
 <template>
-  <section class="w-full flex flex-col items-center pt-8 px-4 gap-2 md:gap-0">
-    <p class="text-lg md:text-xl lg:text-3xl font-bold text-primary italic pt-10">
+  <section class="flex-1 min-h-0 flex flex-col items-center pt-8 px-4 w-full">
+    <p class="text-lg md:text-2xl lg:text-3xl xl:text-4xl font-bold text-primary italic pt-10">
       Salut ! Je suis Audrey
     </p>
     <h1
-      class="bg-gradient-to-r from-[#416146] to-[#A0DEA6] bg-clip-text text-4xl md:text-8xl lg:text-[140px] font-extrabold text-transparent"
+      class="bg-gradient-to-r from-[#416146] to-[#A0DEA6] bg-clip-text text-[42px] md:text-8xl lg:text-[140px] font-extrabold text-transparent"
     >
       Développeuse
     </h1>
     <div
-      class="w-full flex justify-between bg-gradient-to-r from-[#416146] to-[#A0DEA6] bg-clip-text text-2xl md:text-6xl lg:text-8xl font-extrabold text-transparent"
+      class="w-full flex justify-between bg-gradient-to-r from-[#416146] to-[#A0DEA6] bg-clip-text font-extrabold text-transparent"
     >
-      <span>Frontend</span> <span>Backend</span>
+      <h2 class="text-[28px] md:text-6xl lg:text-7xl xl:text-8xl">Frontend</h2>
+      <h2 class="text-[28px] md:text-6xl lg:text-7xl xl:text-8xl">Backend</h2>
     </div>
-    <div class="relative md:static w-full flex flex-1 justify-center">
+    <div class="flex flex-1 min-h-0 justify-center items-end min-w-0">
       <img
         src="@/assets/avatar.png"
         alt="Avatar"
-        class="absolute z-1 bottom-0 lg:h-[65%] filter brightness-130 object-contain w-50 lg:w-100"
+        class="filter brightness-130 object-contain flex flex-1 h-auto md:h-full lg:scale-[110%] lg:translate-y-[-5%]"
       />
     </div>
   </section>

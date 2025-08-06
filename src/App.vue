@@ -7,7 +7,7 @@ import FooterBar from './components/FooterBar.vue'
 
 <template>
   <HeaderBar />
-  <main class="w-full flex flex-1 justify-center">
+  <main class="flex-1 flex flex-col w-full min-h-0">
     <router-view />
   </main>
   <FooterBar />
