@@ -8,7 +8,7 @@ const mobileMenuOpen = ref(false)
 <template>
   <header class="w-full">
     <nav
-      class="flex w-full items-center justify-between rounded-xl border border-white bg-white/50 px-6 py-2 shadow-lg backdrop-blur-xl"
+      class="flex w-full items-center justify-between rounded-xl border border-white bg-white/50 px-6 py-2 shadow-lg backdrop-blur-xl dark:bg-black/20 dark:border-black/20"
     >
       <span class="text-xl lg:text-3xl font-bold text-black-soft pattaya">Audrey Gaborit</span>
       <!-- Desktop menu -->

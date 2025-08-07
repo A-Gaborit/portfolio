@@ -36,20 +36,6 @@
   --section-gap: 160px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
-
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
-}
-
 *,
 *::before,
 *::after {
@@ -71,10 +57,10 @@ body {
   margin: auto;
   color: var(--color-text);
   background:
-    radial-gradient(circle at 20% 30%, #b0f2b6 0%, transparent 30%),
-    radial-gradient(circle at 80% 20%, #fff176 0%, transparent 40%),
-    radial-gradient(circle at 50% 70%, #b0f2b6 0%, transparent 50%),
-    linear-gradient(to bottom right, #b0f2b6, #fff176);
+    radial-gradient(circle at 20% 30%, var(--color-primary-400) 0%, transparent 30%),
+    radial-gradient(circle at 80% 20%, var(--color-secondary-400) 0%, transparent 40%),
+    radial-gradient(circle at 50% 70%, var(--color-primary-400) 0%, transparent 50%),
+    linear-gradient(to bottom right, var(--color-primary-400), var(--color-secondary-400));
   transition:
     color 0.5s,
     background-color 0.5s;
@@ -100,4 +86,28 @@ body {
 
 .pattaya {
   font-family: 'Pattaya', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+
+    --color-black-soft: var(--vt-c-text-dark-2);
+  }
+
+  body {
+    background:
+      radial-gradient(circle at 20% 30%, var(--color-primary-950) 0%, transparent 30%),
+      radial-gradient(circle at 80% 20%, var(--color-secondary-950) 0%, transparent 40%),
+      radial-gradient(circle at 50% 70%, var(--color-primary-950) 0%, transparent 50%),
+      linear-gradient(to bottom right, var(--color-primary-950), var(--color-secondary-950));
+  }
 }
